@@ -1,3 +1,41 @@
+//PART A
+
+for(let x=0;x<=20;x++){
+  console.log("x="+x);
+}
+
+for(let k=0;k<=50;k += 5){
+  console.log("multiple of k x 5 is " +k);
+}
+
+
+let sum = 0;
+for(let z=0;z<=10;z++){
+  sum = sum + z;
+}
+  console.log(`the sum of the numbers is ${sum}`);
+
+//PART B
+
+//let answer = "yes";
+//while(answer != "open"){
+  //console.log("wrong");
+ // answer = prompt("enter open to get in");
+//}``
+
+
+let answer2 = ["no", "nope", "good"];
+let index = 0;
+let text = answer2[index];
+while(text !== "good"){
+    console.log("wrong password");
+    index++;
+    text = answer2[index];
+}
+
+console.log("correct password");
+
+
 /*
   =============================================
   🧩 JavaScript Loop Practice Assignment
