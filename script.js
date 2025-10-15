@@ -36,6 +36,35 @@ while(text !== "good"){
 console.log("correct password");
 
 
+let counting = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,"finish", "finish1"];
+let numberPos = 0;
+let typing = counting[numberPos];
+while(typing != "finish1"){
+  console.log(`your number is ${typing}`);
+  numberPos++;
+  typing = counting[numberPos];
+}
+
+let countdown = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1 ,0, "GO!"]
+let countNumber = 0;
+let inputCount;
+do {
+  inputCount = countdown[countNumber];
+  console.log(`${inputCount}`)
+  countNumber++;
+} while (inputCount != "GO!");
+
+let guess;
+
+do {
+  guess = Math.floor(Math.random() * 10) + 1;
+  console.log(`you guessed ${guess}`);
+} while (guess != 5);
+
+console.log("you got it the answer was 5!")
+
+
+
 /*
   =============================================
   🧩 JavaScript Loop Practice Assignment
