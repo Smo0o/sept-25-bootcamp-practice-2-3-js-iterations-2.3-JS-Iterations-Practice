@@ -63,6 +63,41 @@ do {
 
 console.log("you got it the answer was 5!")
 
+let menu = 1;
+
+do {
+  console.log("1. Play 2. Exit");
+  menu = Number(prompt("Enter 1 to play or 2 to exit"));
+} while (menu !== 2);
+
+console.log("You exited the menu");
+
+let numberInput = 0;
+do {
+  numberInput = prompt("enter a number greater than 10");
+} while (numberInput <= 10);
+console.log("thank you for entering a number greater than 10");
+
+for(let i=0; i>=10; i++)
+  if(i==7){
+    break;
+  }
+
+for(let j=1;j<=10;j++){
+  if(j==5){
+    continue;     
+  }
+  console.log(j);
+}
+for(let m=1;m<=20;m++){
+  if(m==17){
+    break;
+  }
+  if(m%2==0){
+    continue;
+  } 
+  console.log(m);
+} 
 
 
 /*
